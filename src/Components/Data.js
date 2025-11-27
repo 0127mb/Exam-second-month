@@ -26,8 +26,8 @@ img:carol,
 name:'“Shox”lar uchun shox donasi ko‘rinishidagi nishon',
 pricenow:'525 250.00 uzs',
 discount:'600 000.00 uzs',
-plusbutton: '-',
-minusbutton:'+',
+plusbutton: '+',
+minusbutton:'-',
 deletebutton:'X'
  }
 ] 
