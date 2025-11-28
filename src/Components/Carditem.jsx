@@ -22,7 +22,7 @@ setcounter (counter - 1)
     <>
     <div className="Item" style={{  display: remove ? 'none': 'block' }}>
         <button className='remove' onClick={()=> setremove (!remove) } >{props.remove}</button>
-        <img src={props.img} alt="" />
+        <img src={props.img} alt="" className='img'/>
         <h2>{props.name}</h2>
         <div className="purches">
             <span className='current'>{props.price}</span>
