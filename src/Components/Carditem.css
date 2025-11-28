@@ -21,13 +21,11 @@ margin-left: 40px;
 margin-top: 20px;
 }
 .Item h2{
+    position: absolute;
+    top: 20px;
+    left: 180px;
     font-size: 24px;
-    /* padding: 112px 24px; */
-    padding-bottom: 112px;
-    padding-top: 24px;
-    padding-left: 12px;
     width: 602px;
-    /* height: 48px; */
     font-family: Poppins;
 font-weight: 700;
 font-style: Bold;

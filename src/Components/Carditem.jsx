@@ -4,6 +4,7 @@ import './Carditem.css'
 
 export default function Carditem(props) {
     const [counter,setcounter] = useState(1)
+    const [remove,setremove] = useState(false)
     function plus (){
 
     setcounter (counter + 1)
@@ -19,8 +20,8 @@ setcounter (counter - 1)
     }
   return (
     <>
-    <div className="Item">
-        <button className='remove'>{props.remove}</button>
+    <div className="Item" style={{  display: remove ? 'none': 'block' }}>
+        <button className='remove' onClick={()=> setremove (!remove) } >{props.remove}</button>
         <img src={props.img} alt="" />
         <h2>{props.name}</h2>
         <div className="purches">
