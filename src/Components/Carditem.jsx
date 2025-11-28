@@ -15,13 +15,27 @@ export default function Carditem(props) {
 
        if( counter > 1  ){
 setcounter (counter - 1)
+       }    }
+       function handleremove (){
+        const sure = confirm('siz haqqattan ham item cardni ochirmoqchimisiz')
+        if(sure){
+          setremove (true)
+          const yes  = confirm('item remove has been succesful if you want to return item refresh the page')
+if(yes){
+  setTimeout(()=>{
+    window.location.reload();
+  }, 3000)
+}
+
+        }
+   
        }
 
-    }
+
   return (
     <>
     <div className="Item" style={{  display: remove ? 'none': 'block' }}>
-        <button className='remove' onClick={()=> setremove (!remove) } >{props.remove}</button>
+        <button className='remove' onClick={  handleremove } >{props.remove}</button>
         <img src={props.img} alt="" className='img'/>
         <h2>{props.name}</h2>
         <div className="purches">
